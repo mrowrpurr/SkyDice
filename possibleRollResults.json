@@ -1,0 +1,73 @@
+{
+    "1": [
+        {
+            "name": "Summoning 35 Skeevers!!",
+            "actions": [
+                {
+                    "type": "summon",
+                    "count": 35,
+                    "form": "__formData|Skyrim.esm|0x23ab7"
+                }
+            ]
+        }
+    ],
+    "2": [
+        {
+            "name": "Summoning 4 Wolves!",
+            "actions": [
+                {
+                    "type": "summon",
+                    "count": 4,
+                    "form": "__formData|Skyrim.esm|0x23abe"
+                }
+            ]
+        }
+    ],
+    "3": [
+        {
+            "name": "Summoning 4 Skeevers",
+            "actions": [
+                {
+                    "type": "summon",
+                    "count": 4,
+                    "form": "__formData|Skyrim.esm|0x23ab7"
+                }
+            ]
+        }
+    ],
+    "4": [
+        {
+            "name": "Giving player arrows",
+            "actions": [
+                {
+                    "type": "additem",
+                    "form": "__formData|Skyrim.esm|0x1397f",
+                    "count": 50
+                }
+            ]
+        }
+    ],
+    "5": [
+        {
+            "name": "Giving player gold!",
+            "actions": [
+                {
+                    "type": "additem",
+                    "form": "__formData|Skyrim.esm|0xf",
+                    "count": 1000
+                }
+            ]
+        }
+    ],
+    "6": [
+        {
+            "name": "Giving ultimate healing potion!!",
+            "actions": [
+                {
+                    "type": "additem",
+                    "form": "__formData|Skyrim.esm|0x39be5"
+                }
+            ]
+        }
+    ]
+}
