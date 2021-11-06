@@ -11,9 +11,9 @@ event OnPlayerLoadGame()
     ListenForKeyboardShortcut()
 endEvent
 
-; Left Alt + Left Shift + R => 19
+; Left Alt + Left Shift + X => 45
 function ListenForKeyboardShortcut()
-    RegisterForKey(19) ; R
+    RegisterForKey(45) ; X
 endFunction
 
 event OnKeyDown(int keyCode)
@@ -23,6 +23,16 @@ event OnKeyDown(int keyCode)
 endEvent
 
 function RollDice()
-    Debug.Notification("Rolling dice...")
     SkyDice_DiceRollSoundMarker.Play(GetActorReference())
+    Utility.WaitMenuMode(2)
+
+    int roll              = 2 ; Utility.RandomInt(1, 4) ; d4
+    int outcomes          = JValue.readFromDirectory("Data/SkyDice/RollOutcomes/" + roll)
+    string[] outcomeNames = JMap.allKeysPArray(outcomes)
+    int randomNameIndex   = Utility.RandomInt(0, outcomeNames.Length - 1)
+    int actionRef         = JMap.getObj(outcomes, outcomeNames[randomNameIndex])
+
+    SkyAction.PerformAction(actionRef)
+
+    Debug.Notification("Rolled a " + roll)
 endFunction
