@@ -1,0 +1,7 @@
+{
+    "action": "PlaceAtPlayer",
+    "params": {
+        "form": "__formData|skyrim.esm|0x23AB7",
+        "count": 47
+    }
+}
