@@ -26,7 +26,7 @@ function RollDice()
     SkyDice_DiceRollSoundMarker.Play(GetActorReference())
     Utility.WaitMenuMode(2)
 
-    int roll              = 2 ; Utility.RandomInt(1, 4) ; d4
+    int roll              = Utility.RandomInt(1, 4) ; d4
     int outcomes          = JValue.readFromDirectory("Data/SkyDice/RollOutcomes/" + roll)
     string[] outcomeNames = JMap.allKeysPArray(outcomes)
     int randomNameIndex   = Utility.RandomInt(0, outcomeNames.Length - 1)
