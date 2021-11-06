@@ -1,9 +1,6 @@
 {
     "action": "PlaceAtPlayer",
     "params": {
-        "text": "some text",
-        "float": 12.34,
-        "bool": true,
         "form": "__formData|skyrim.esm|0x23AB7",
         "count": 69
     }

@@ -32,7 +32,7 @@ function RollDice()
     int randomNameIndex   = Utility.RandomInt(0, outcomeNames.Length - 1)
     int actionRef         = JMap.getObj(outcomes, outcomeNames[randomNameIndex])
 
-    SkyAction.PerformAction(actionRef)
+    SkyActions.PerformAction(actionRef)
 
     Debug.Notification("Rolled a " + roll)
 endFunction
